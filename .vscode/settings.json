@@ -11,5 +11,6 @@
 	},
 	"ltex.enabled": false,
 	"cSpell.enabled": true,
+	"editor.fontSize": 11,
 
 }

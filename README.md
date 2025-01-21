@@ -13,12 +13,16 @@ npm install
 ```
 This will install the necessary dependencies for the project.
 
+Then use the 'Live Preview' to view the webpage.
+
 ## Development
 
 It is recommended to use the VSCode Live Server extension to run the project
 locally. This will allow you to see changes in real-time as you make them. There
 is no need to run a build process or refresh the page manually. Additionally,
 you do not need to setup a local server to run the project.
+
+I added information about myself as well as 1 project that I did for a class.
 
 ## Testing
 

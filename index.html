@@ -10,7 +10,9 @@
   <link rel="shortcut icon" href="img/favicon.ico">
 </head>
 
+
 <body>
+  <!--Added a section about me-->
   <h1>Welcome to a Website about me!</h1>
   <p>
     <a href="about.html">About Me</a>
@@ -18,39 +20,44 @@
 
   <h2>My name is Tony Cukurs</h2>
 
-  <p>
-    I am expected to graduate in fall 2025!</p>
-    <p> I currently do not have a job in web development.</p>
-    <p>I have not had a job or internship doing web development.</p>
-    <p> I am currently taking this class to learn more about web development.</p>
+  <ul>
+    <li>I am expected to graduate in fall 2025!</li>
+    <li> I currently do not have a job in web development.</li>
+    <li>I have not had a job or internship doing web development.</li>
+    <li> I am currently taking this class to learn more about web development.</li>
+    </ul>
+  <!-- Added a photo of me-->
+    <h3>Here is a photo of me</h3>
     
-    <h2>Here is a photo of me</h2>
-    
-    <div class="crop">
+    <div class="img">
       <img src="tony.png" alt="Tony Cukurs">
     </div>
-
+<!-- Added hobbies of mine-->
    <p>
     Some of my hobbies include tinkering with electronics, playing video games, and editing fun videos</p>
     </p>
     <p>
       Here is a link to my YouTube Channel
     </p>
-    <div class="crop">
-      <img src="youtubechannel.png" alt="Youtube Channel">
-    </div>
-    <a><href="https://www.youtube.com/@IslandRyeno/featured">IslandRyeno</a>
+  
+    <a href="https://www.youtube.com/@IslandRyeno/featured">IslandRyeno</a>
+
 <body>
 
   <h2>Projects</h2>
 
-  <iframe width="420" height="315"
-  src="https://youtu.be/embed/aLVybk8ev-8?si=N3iM96osBoKrKZ4d?autoplay=1&mute=1">
-  </iframe> 
+  <ul>
+    <li>Project 1 Generative AI Cooking: <a href="https://youtu.be/aLVybk8ev-8?si=OBtoy_DN1NrFX9UA">Project 1</a></li>
+      
+    </ul>
+
+    
 
   <h1>HTML Rocks!</h1>
-  
-  <hr>
+<!-- Added a hello world button to alert the user-->
+  <button id="helloWorldButton">Click on me</button>
+  <div id="output"></div>
+  <hr> 
   <form id="addForm">
     <label for="num1">Number 1:</label>
     <input type="number" id="num1" name="num1" required>
@@ -67,6 +74,11 @@
 
   <button id="jokeButton">Get a Random Joke</button>
   <p id="joke"></p>
+
+
+
+
+  
 
   <script type="module" script="js/main.js">
     import {helloWorld, add, fetchRandomJoke} from './js/main.js';
@@ -107,6 +119,13 @@
         document.getElementById('joke').textContent = `Error: ${e.message}`;
       }
     });
+
+    const helloWorldButton = document.getElementById('helloWorldButton');
+        helloWorldButton.addEventListener('click', () => {
+            helloWorld();
+        });
+
+    
   </script>
 
 </body>

@@ -7,10 +7,15 @@
  */
 
 /**
- * This function prints an alert message to the user.
+ * This function prints an alert message to the user on the webpage.
  */
 export function helloWorld() {
-    console.log('Alert! Alert! You have been Alerted!');
+    const outputElement = document.getElementById('output');
+    if (outputElement) {
+        outputElement.textContent = 'Hello there!!';
+    } else {
+        console.error('Output element not found!');
+    }
 }
 
 /**

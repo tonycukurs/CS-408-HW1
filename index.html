@@ -55,9 +55,13 @@
 
   <h1>HTML Rocks!</h1>
 <!-- Added a hello world button to alert the user-->
-  <button id="helloWorldButton">Click on me</button>
-  <div id="output"></div>
+  
+<button onclick="helloWorld()">Click on me</button>
+  
   <hr> 
+
+  
+
   <form id="addForm">
     <label for="num1">Number 1:</label>
     <input type="number" id="num1" name="num1" required>
@@ -85,7 +89,9 @@
 
     // This shows how to assign a function to the window object
     // so that it can be called from the browser console
-    window.helloWorld = helloWorld;
+    window.helloWorld = function() {
+      alert("alert");
+    };
 
     // This shows how to add an event listener to a button in the HTML
     // and call a function when the button is clicked

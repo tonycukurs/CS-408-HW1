@@ -10,13 +10,9 @@
  * This function prints an alert message to the user on the webpage.
  */
 export function helloWorld() {
-    const outputElement = document.getElementById('output');
-    if (outputElement) {
-        outputElement.textContent = 'Hello there!!';
-    } else {
-        console.error('Output element not found!');
-    }
+    alert('Welcome to the Website!');
 }
+
 
 /**
  * This function adds two numbers together and returns the sum. This demonstrates
